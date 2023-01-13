@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 13 task 2</title>
+  </head>
+  <style>
+    body {
+      height: 99vh;
+      background-color: rgb(177, 172, 172);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .conteiner {
+      width: 60%;
+      height: 600px;
+    }
+    .input-pole {
+      background-color: white;
+      width: 99.4%;
+      height: 250px;
+      border-radius: 10px;
+    }
+    .conteiner-number {
+      margin-top: 10px;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .conteiner-qwer {
+      margin-top: 5px;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .conteiner-asd,
+    .conteiner-zxc {
+      margin-top: 5px;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .asd {
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 50px;
+    }
+    .asd:first-child {
+      width: 100px;
+      height: 50px;
+    }
+    .asd:last-child {
+      width: 105px;
+      height: 50px;
+    }
+    .number {
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 50px;
+    }
+    .number:last-child {
+      width: 90px;
+      height: 50px;
+    }
+    .qwer {
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 50px;
+    }
+    .qwer:first-child {
+      width: 90px;
+      height: 50px;
+    }
+    .zxc {
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 50px;
+    }
+    .zxc:first-child {
+      width: 150px;
+      height: 50px;
+    }
+    .zxc:last-child {
+      width: 150px;
+      height: 50px;
+    }
+    .space {
+      margin-top: 8px;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      border-radius: 10px;
+    }
+    .area {
+      outline: none;
+      border: none;
+      border: solid 1px #f2f2f2;
+      color: gray;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  </style>
+  <body>
+    <div class="conteiner" id="conteinerMain">
+      <div class="input-pole" id="inpDiv">
+        <textarea
+          class="area"
+          id="areaText"
+          style="border-radius: 10px; width: 100%; height: 250px; resize: none"
+        ></textarea>
+      </div>
+      <div class="conteiner-number">
+        <div class="number" id="btn`">`</div>
+        <div class="number" id="btn11">1</div>
+        <div class="number" id="btn2">2</div>
+        <div class="number" id="btn3">3</div>
+        <div class="number" id="btn4">4</div>
+        <div class="number" id="btn5">5</div>
+        <div class="number" id="btn6">6</div>
+        <div class="number" id="btn7">7</div>
+        <div class="number" id="btn8">8</div>
+        <div class="number" id="btn9">9</div>
+        <div class="number" id="btn0">0</div>
+        <div class="number" id="btn-">-</div>
+        <div class="number" id="btn=">=</div>
+        <div class="number" id="backspace">Backspace</div>
+      </div>
+      <div class="conteiner-qwer">
+        <div class="qwer" id="tab">Tab</div>
+        <div class="qwer" id="q">q</div>
+        <div class="qwer" id="w">w</div>
+        <div class="qwer" id="e">e</div>
+        <div class="qwer" id="r">r</div>
+        <div class="qwer" id="t">t</div>
+        <div class="qwer" id="y">y</div>
+        <div class="qwer" id="u">u</div>
+        <div class="qwer" id="i">i</div>
+        <div class="qwer" id="o">o</div>
+        <div class="qwer" id="p">p</div>
+        <div class="qwer" id="kvadrLeft">[</div>
+        <div class="qwer" id="kvadrRight">]</div>
+        <div class="qwer" id="lineUP">\</div>
+      </div>
+      <div class="conteiner-asd">
+        <div class="asd" id="capsLock">CapsLock</div>
+        <div class="asd" id="a">a</div>
+        <div class="asd" id="s">s</div>
+        <div class="asd" id="d">d</div>
+        <div class="asd" id="f">f</div>
+        <div class="asd" id="g">g</div>
+        <div class="asd" id="h">h</div>
+        <div class="asd" id="j">j</div>
+        <div class="asd" id="k">k</div>
+        <div class="asd" id="l">l</div>
+        <div class="asd" id="krapKom">;</div>
+        <div class="asd" id="apostr">'</div>
+        <div class="asd" id="enter">Enter</div>
+      </div>
+      <div class="conteiner-zxc">
+        <div class="zxc" id="shiftBtn">Shift</div>
+        <div class="zxc" id="z">z</div>
+        <div class="zxc" id="x">x</div>
+        <div class="zxc" id="c">c</div>
+        <div class="zxc" id="v">v</div>
+        <div class="zxc" id="b">b</div>
+        <div class="zxc" id="n">n</div>
+        <div class="zxc" id="m">m</div>
+        <div class="zxc" id="koma">,</div>
+        <div class="zxc" id="krapka">.</div>
+        <div class="zxc" id="rightLine">/</div>
+        <div class="zxc" id="shiftBtn1">Shift</div>
+      </div>
+      <div class="space" id="space"></div>
+    </div>
+
+    <script src="script13Task2.js"></script>
+  </body>
+</html>
